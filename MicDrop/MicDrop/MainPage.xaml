@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MicDrop"
+             x:Class="MicDrop.MainPage">
+    
+    <Grid x:Name="canvas">
+        <!-- Place new controls here -->
+        <Label 
+            Grid.Row="0"
+            x:Name="title"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            FontSize="40"
+            FontAttributes="Bold"
+            Padding="0, 200, 0, 0"
+            Text = "{StaticResource CloseTitleText}">
+        </Label>
+        <Label x:Name="mic"
+               Grid.Row="0"
+               Text="{StaticResource MicEmoji}"
+               Rotation="45"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               VerticalTextAlignment="End"
+               FontSize="100"
+               IsVisible="True"
+        ></Label>
+        <Button Text="{StaticResource CloseHandEmoji}"
+                Grid.Row="0"
+                x:Name="hand"
+                BackgroundColor="Transparent"
+                FontSize="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="OnMicDrop"
+        />
+    </Grid>
+</ContentPage>

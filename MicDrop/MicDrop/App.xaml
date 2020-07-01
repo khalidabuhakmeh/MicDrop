@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             x:Class="MicDrop.App">
+    <Application.Resources>
+            <System:String x:Key="CloseTitleText">MIC Drop?</System:String>
+            <System:String x:Key="OpenTitleText">💥Boom!💥</System:String>
+            <System:String x:Key="CloseHandEmoji">👊</System:String>
+            <System:String x:Key="OpenHandEmoji">🖐</System:String>
+            <System:String x:Key="MicEmoji">🎤</System:String>
+            <System:Double x:Key="TitleScale">1.25</System:Double>
+            <System:Double x:Key="Bottom">50</System:Double>
+            <System:UInt32 x:Key="AnimationLength">3000</System:UInt32>
+            <System:UInt32 x:Key="MaxRotation">720</System:UInt32>
+    </Application.Resources>
+</Application>
